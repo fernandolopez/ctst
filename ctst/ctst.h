@@ -4,7 +4,7 @@
 void __ctst_setup();
 void __ctst_teardown();
 void __ctst_assert(int assertion, const char *msg, char **result);
-extern int __ctst_success;
+extern int __ctst_succeeded;
 extern int __ctst_failed;
 extern int __ctst_skipped;
 

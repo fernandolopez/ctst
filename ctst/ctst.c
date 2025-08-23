@@ -2,13 +2,13 @@
 #include <string.h>
 #include "ctst.h"
 
-int __ctst_success;
+int __ctst_succeeded;
 int __ctst_failed;
 int __ctst_skipped;
 
 void __ctst_assert(int assertion, const char *msg, char **result){
 	if (assertion){
-		__ctst_success++;
+		__ctst_succeeded++;
 		return;
 	}
 	if (*result == NULL){

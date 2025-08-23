@@ -20,3 +20,4 @@ clean:
 
 test:
 	make -C tests
+	ctst
