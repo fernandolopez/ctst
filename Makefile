@@ -14,4 +14,9 @@ test_something.o: test_something.c ctst/ctst.h
 ctst/ctst.o: ctst/ctst.c ctst/ctst.h
 
 clean:
+	make -C tests clean
 	rm -f __ctst_main_test_something.o __ctst_main_test_something.c test_something.bin test_something.o ctst/ctst.o
+
+
+test:
+	make -C tests
